@@ -1,70 +1,52 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Projeto API de Filmes em React
 
-## Available Scripts
+Este projeto é uma aplicação web desenvolvida em React que consome a API do The Movie Database (TMDb) para exibir uma lista de filmes populares. Através da API, os usuários podem visualizar informações detalhadas sobre cada filme, incluindo sinopse, data de lançamento e classificação.
 
-In the project directory, you can run:
+![screenshot-localhost_3000-2023 07 18-01_01_03](https://github.com/alequissandrara/api_filmes_react/assets/70325643/84e6c5ca-e6e2-49bc-aec2-dc57c7dbc77a)
 
-### `npm start`
+### Recursos e Funcionalidades:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Listagem de Filmes Populares:** A aplicação exibe uma lista de filmes populares obtidos da API do TMDb, mostrando seus respectivos títulos e pôsteres.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Detalhes do Filme:** Ao clicar em um filme, os usuários são direcionados para a página de detalhes, onde podem visualizar informações adicionais, como sinopse, data de lançamento e classificação média.
 
-### `npm test`
+3. **Estrelas de Classificação:** A aplicação exibe uma representação visual da classificação média de cada filme em forma de estrelas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Navegação entre Páginas:** Utilizando o React Router, a aplicação permite a navegação entre a página principal com a lista de filmes e a página de detalhes de cada filme.
 
-### `npm run build`
+### Tecnologias Utilizadas:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React: Biblioteca JavaScript de código aberto para construção de interfaces de usuário.
+- React Router: Para gerenciamento de rotas e navegação entre as páginas da aplicação.
+- Styled Components: Para estilização dos componentes de forma modular e reutilizável.
+- API do The Movie Database (TMDb): Fonte de dados para obter informações sobre filmes populares.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Como Executar o Projeto:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone este repositório em sua máquina local usando o comando:
+git clone https://github.com/seu-usuario/api-de-filmes-react.git
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Acesse o diretório do projeto:
+cd api-de-filmes-react
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Instale as dependências utilizando o npm ou yarn:
+npm install ou yarn install
 
-### Code Splitting
+4. Obtenha sua chave de API do TMDb em https://www.themoviedb.org/ e atualize o arquivo `config/key.js` com a chave obtida.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Inicie a aplicação localmente:
+npm start
 
-### Analyzing the Bundle Size
+### Créditos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Este projeto foi baseado na playlist do canal Girl Coding no YouTube. Para acessar o tutorial completo, [clique aqui](https://youtube.com/playlist?list=PLOzZAH_pgb_QGWVmQwkRFTYhHuG1qKHIR). Agradecimentos especiais à criadora do canal por compartilhar seu conhecimento e tornar este projeto possível.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Observações:
+Este projeto foi desenvolvido com fins educacionais e de aprendizado em React e consumo de APIs. A aplicação pode ser expandida e aprimorada com mais recursos, como pesquisa por filmes, filtros, entre outros. Sinta-se à vontade para modificar e contribuir com este projeto!
